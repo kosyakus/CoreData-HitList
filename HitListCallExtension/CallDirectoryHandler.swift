@@ -53,7 +53,7 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
         var phoneNumbers = [CXCallDirectoryPhoneNumber]()
         var labels = [String]()
         
-        for i in 79039700000...79041000000 {
+        for i in 79039700000...79040000000 {
             phoneNumbers.append(CXCallDirectoryPhoneNumber(i))
             labels.append("Test number")
         }
