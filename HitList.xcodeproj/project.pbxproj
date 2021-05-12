@@ -14,7 +14,33 @@
 		E187FCD8262B24F80093B482 /* HitList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E187FCD6262B24F80093B482 /* HitList.xcdatamodeld */; };
 		E187FCDA262B24FA0093B482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E187FCD9262B24FA0093B482 /* Assets.xcassets */; };
 		E187FCDD262B24FA0093B482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E187FCDB262B24FA0093B482 /* LaunchScreen.storyboard */; };
+		E1DD82B6264C0E8D00DB6AE2 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD82B5264C0E8D00DB6AE2 /* CallDirectoryHandler.swift */; };
+		E1DD82BA264C0E8D00DB6AE2 /* HitListCallExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1DD82B3264C0E8D00DB6AE2 /* HitListCallExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1DD82B8264C0E8D00DB6AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E187FCC2262B24F80093B482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1DD82B2264C0E8D00DB6AE2;
+			remoteInfo = HitListCallExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1DD82BB264C0E8D00DB6AE2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1DD82BA264C0E8D00DB6AE2 /* HitListCallExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E187FCCA262B24F80093B482 /* HitList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +52,20 @@
 		E187FCD9262B24FA0093B482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E187FCDC262B24FA0093B482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E187FCDE262B24FA0093B482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DD82B3264C0E8D00DB6AE2 /* HitListCallExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HitListCallExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DD82B5264C0E8D00DB6AE2 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		E1DD82B7264C0E8D00DB6AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E187FCC7262B24F80093B482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DD82B0264C0E8D00DB6AE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E187FCCC262B24F80093B482 /* HitList */,
+				E1DD82B4264C0E8D00DB6AE2 /* HitListCallExtension */,
 				E187FCCB262B24F80093B482 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E187FCCA262B24F80093B482 /* HitList.app */,
+				E1DD82B3264C0E8D00DB6AE2 /* HitListCallExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +108,15 @@
 			path = HitList;
 			sourceTree = "<group>";
 		};
+		E1DD82B4264C0E8D00DB6AE2 /* HitListCallExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E1DD82B5264C0E8D00DB6AE2 /* CallDirectoryHandler.swift */,
+				E1DD82B7264C0E8D00DB6AE2 /* Info.plist */,
+			);
+			path = HitListCallExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +127,34 @@
 				E187FCC6262B24F80093B482 /* Sources */,
 				E187FCC7262B24F80093B482 /* Frameworks */,
 				E187FCC8262B24F80093B482 /* Resources */,
+				E1DD82BB264C0E8D00DB6AE2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1DD82B9264C0E8D00DB6AE2 /* PBXTargetDependency */,
 			);
 			name = HitList;
 			productName = HitList;
 			productReference = E187FCCA262B24F80093B482 /* HitList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E1DD82B2264C0E8D00DB6AE2 /* HitListCallExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1DD82BE264C0E8D00DB6AE2 /* Build configuration list for PBXNativeTarget "HitListCallExtension" */;
+			buildPhases = (
+				E1DD82AF264C0E8D00DB6AE2 /* Sources */,
+				E1DD82B0264C0E8D00DB6AE2 /* Frameworks */,
+				E1DD82B1264C0E8D00DB6AE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HitListCallExtension;
+			productName = HitListCallExtension;
+			productReference = E1DD82B3264C0E8D00DB6AE2 /* HitListCallExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,11 +162,14 @@
 		E187FCC2262B24F80093B482 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					E187FCC9262B24F80093B482 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					E1DD82B2264C0E8D00DB6AE2 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -118,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				E187FCC9262B24F80093B482 /* HitList */,
+				E1DD82B2264C0E8D00DB6AE2 /* HitListCallExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +200,13 @@
 				E187FCDD262B24FA0093B482 /* LaunchScreen.storyboard in Resources */,
 				E187FCDA262B24FA0093B482 /* Assets.xcassets in Resources */,
 				E187FCD5262B24F80093B482 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DD82B1264C0E8D00DB6AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1DD82AF264C0E8D00DB6AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DD82B6264C0E8D00DB6AE2 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1DD82B9264C0E8D00DB6AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1DD82B2264C0E8D00DB6AE2 /* HitListCallExtension */;
+			targetProxy = E1DD82B8264C0E8D00DB6AE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E187FCD3262B24F80093B482 /* Main.storyboard */ = {
@@ -288,10 +381,11 @@
 		E187FCE2262B24FA0093B482 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y3AFHFW5B2;
+				DEVELOPMENT_TEAM = 7546G7N5MQ;
 				INFOPLIST_FILE = HitList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,10 +401,11 @@
 		E187FCE3262B24FA0093B482 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y3AFHFW5B2;
+				DEVELOPMENT_TEAM = 7546G7N5MQ;
 				INFOPLIST_FILE = HitList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,6 +415,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1DD82BC264C0E8D00DB6AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7546G7N5MQ;
+				INFOPLIST_FILE = HitListCallExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.natali.HitList.HitListCallExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E1DD82BD264C0E8D00DB6AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7546G7N5MQ;
+				INFOPLIST_FILE = HitListCallExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.natali.HitList.HitListCallExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -340,6 +477,15 @@
 			buildConfigurations = (
 				E187FCE2262B24FA0093B482 /* Debug */,
 				E187FCE3262B24FA0093B482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1DD82BE264C0E8D00DB6AE2 /* Build configuration list for PBXNativeTarget "HitListCallExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1DD82BC264C0E8D00DB6AE2 /* Debug */,
+				E1DD82BD264C0E8D00DB6AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
